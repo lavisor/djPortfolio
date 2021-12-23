@@ -1,0 +1,16 @@
+<div class="gallery-container" id="photos"> 
+    <div class="gallery-content">
+        <div class="text-container"> 
+            <h2>Photos</h2>
+        </div>
+        <div class="image-collection"> 
+            <div class="image-holder" *ngFor="let img of imageCollection;let i=index;" >
+            <div class="imageObj" [style.background-image]="img" style="background-size: cover;background-position: center;"></div>
+            </div>
+            <div class="empty-image"></div>
+        </div>
+        <div class="fade-container"> 
+            <img width=25 height=25 src='../../../assets/instagram.png'> <span (click)="openInstaProfile()"> View more on Instagram </span>
+        </div>
+    </div>
+</div>

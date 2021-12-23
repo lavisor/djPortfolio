@@ -1,0 +1,24 @@
+<div class="header-container">
+    <div class="header-logo-container"> 
+        <div class="header-logo-text">
+            <span class="heading-main">DJ Stinsa</span>
+            <span class="heading-description"> DJ service and lighting solution - Chennai</span>
+        </div>
+    </div>
+    <div class="header-menuitems font-global">
+        <nb-list-item *ngFor="let menu of menuItems" (click)="changeRoutes(menu.menuUrl)">
+            {{ menu.menuName }}
+          </nb-list-item>
+    </div>
+
+    <div class="header-menuitems-mobile font-global" *ngIf="showMobileMenu">
+        <nb-icon icon="close-outline" class="menu-icon mobile-close-menu" (click)="toggleMobileMenu()"></nb-icon>
+        <div class="margin-large">
+            <nb-list-item *ngFor="let menu of menuItems" (click)="changeRoutes(menu.menuUrl)">
+                <span> {{ menu.menuName }} </span>
+            </nb-list-item>
+        </div>
+    </div>
+
+    <nb-icon icon="menu-outline" class="menu-icon" (click)="toggleMobileMenu()"></nb-icon>
+</div>

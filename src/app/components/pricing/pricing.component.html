@@ -1,0 +1,9 @@
+<div class="price-card-collection" id="pricing">
+    <div class="text-container"> 
+        <h2>Pricing</h2>
+    </div>
+    <div class="price-cards-container">
+        <app-pricecard *ngFor="let plans of pricingPlans;let i=index;" [features]="plans" [ngClass]="{'prefered': i == 1}"></app-pricecard>
+    </div>    
+</div>
+

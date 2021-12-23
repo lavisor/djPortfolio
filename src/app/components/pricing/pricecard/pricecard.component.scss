@@ -1,0 +1,63 @@
+.price-card{
+
+    .price-heading{
+        padding: 1px 0px 15px 0px;
+        background:#fff;
+        border-radius: 5px 5px 0px 0px;
+
+        h3{
+            color:#151a30;
+        }
+
+        .price-value{
+            font-size:15px;
+            color:#151a30;
+        }
+
+        .ribbon3 {
+            width: 130px;
+            height: 33px;
+            line-height: 30px;
+            padding-left: 15px;
+            position: absolute;
+            left: -10px;
+            top: 121px;
+            background: #222b45;
+        }
+        .ribbon3:before, .ribbon3:after {
+            content: "";
+            position: absolute;
+        }
+        .ribbon3:before {
+            height: 0;
+            width: 0;
+            top: -8.5px;
+            left: 0.1px;
+            border-bottom: 9px solid black;
+            border-left: 9px solid transparent;
+        }
+        .ribbon3:after {
+            height: 0;
+            width: 0;
+            right: -12.5px;
+            border-top: 18px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 14px solid #222b45;
+        }
+    }
+
+    .price-description {
+        nb-list{
+            nb-list-item{
+                color:#151a30;
+                border:none;
+                text-align: center;
+                justify-content: center;
+                padding: 18px 0px 0px 0px;
+            }
+
+            padding-bottom: 20px;
+        }
+
+    }
+}

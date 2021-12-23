@@ -1,0 +1,46 @@
+<div class="review-heading-container">
+<h2> What our customers say </h2>
+</div>
+
+<div class="scroll-parent-container">
+
+    <div class="review-card-container"> 
+        <div class="scroll-container-reviews" #reviewContainer> 
+            <div class="emptyspace-filler"> </div>
+            <nb-card *ngFor="let review of reviews;let i=index;" [ngClass]="{'highlight': isActiveCard(i)}">
+                <nb-card-body>
+                   <i> "{{review.reivewText}}" </i>
+                </nb-card-body>
+                <nb-card-footer>
+                    <nb-user name={{review.name}} title={{review.location}}></nb-user>
+                </nb-card-footer>
+            </nb-card>
+            <div class="emptyspace-filler"> </div>
+        </div>
+    </div>
+    
+    <div class="review-shadow-container"> 
+        <div class="shadow-effect-left"> 
+
+        </div>
+        <div class="scroll-container-filler"> 
+    
+        </div>
+        <div class="shadow-effect-right"> 
+
+        </div>
+    </div>
+
+    <div class="scroll-arrow-container"> 
+        <div class="arrows-collection"> 
+            <div class="left-arrow arrow-container" (click)="scrollLeft()"> 
+                <nb-icon icon="arrow-ios-back-outline" ></nb-icon>
+            </div>
+            
+            <div class="right-arrow arrow-container" (click)="scrollRight()"> 
+                <nb-icon icon="arrow-ios-forward-outline"></nb-icon>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,19 @@
+<div class="price-card">
+  <div class="price-heading"> <h3>{{features.planName}}</h3> 
+    <div class="price-value">
+        &#8377;{{features.price}}
+    </div>
+    <!-- <div class="popular-badge" *ngIf="features.planName =='Premium'"> Most Popular </div> -->
+
+    <div class="ribbon" *ngIf="features.planName =='Premium'">
+        <span class="ribbon3">Most Popular</span>
+    </div>
+</div>
+  <div class="price-description">
+    <nb-list>
+        <nb-list-item *ngFor="let feature of features.features">
+            {{feature.equipmentName}} x {{feature.numbers}}
+        </nb-list-item>
+      </nb-list>
+  </div>
+</div>

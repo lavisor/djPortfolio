@@ -1,0 +1,60 @@
+.price-card-collection{
+    width: 100%;
+    background: #e5e5e5;
+    padding-top:20px;
+    padding-bottom: 40px;
+    box-shadow: 0px 2px 10px 1px rgb(26 21 48 / 75%) inset;
+    -webkit-box-shadow: 0px 2px 10px 1px rgb(26 21 48 / 75%) inset;
+    -moz-box-shadow: 0px 2px 10px 1px rgba(26, 21, 48, 0.75);
+
+    .text-container{
+        margin: 20px auto;
+
+        h2{
+            color: #151a30;
+        }
+    }
+
+    .price-cards-container{
+        display:flex;
+        padding: 30px;
+        margin: 0 auto;
+        max-width: 850px;
+
+        app-pricecard{
+            flex-grow:1;
+            background: #e5e5e5;
+            justify-content: center;
+            text-align: center;
+            border-radius: 5px;
+            margin: 8px 0px;
+            box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+            border:1px solid #efaefa;
+        }
+
+        .prefered{
+            transform: scale(1.05);
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .price-card-collection{
+        .price-cards-container{
+            flex-direction: column;
+
+            app-pricecard{
+                margin: 20px 0px;
+            }
+
+            .prefered{
+                transform: scale(1);
+            }
+        }
+
+    }
+}
