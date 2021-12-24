@@ -23,7 +23,8 @@ export class GallaryComponent implements OnInit {
 
   getStyle(index:number){
     let image ="./../../../assets/showcase"+(index+1)+".jpg";
-    return "url("+image+")";
+    // return "url("+image+")";
+    return image;
   }
 
   openInstaProfile(){
