@@ -1,6 +1,7 @@
 # DjStinsa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+[DEMO](https://djstinsa.netlify.app/)
 
 ## Development server
 
