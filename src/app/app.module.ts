@@ -34,7 +34,7 @@ import { PricecardComponent } from './components/pricing/pricecard/pricecard.com
     PricecardComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'dark' }),

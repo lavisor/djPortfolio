@@ -1,6 +1,7 @@
 .hello-container{
-    max-height:465px;
-    overflow:hidden;
+    height: 465px;
+    overflow: hidden;
+    background: #e5e5e5;
 }
 
 video{
@@ -13,6 +14,7 @@ video{
     position:relative;
     top:65px;
     font-family: 'Exo 2', sans-serif;
+    font-display: swap;
     display:flex;
 }
 
@@ -28,6 +30,7 @@ video{
         font-size: 35px;
         margin: 0px;
         color: #000;
+        font-display: swap;
     }
     padding-left:15px;
 }
@@ -40,6 +43,7 @@ video{
     h2{
         font-size: 40px;
         margin: 10px 0px;
+        font-display: swap;
     }
 }
 
@@ -48,10 +52,12 @@ video{
         h2{
             font-size:30px;
             margin: 0px 0px;
+            font-display: swap;
         }
         p{
             font-size:18px;
             line-height:30px;
+            font-display: swap;
         }
     }
 }
