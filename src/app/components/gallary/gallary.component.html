@@ -1,17 +1,17 @@
 <div class="gallery-container" id="photos"> 
     <div class="gallery-content">
-        <div class="text-container"> 
+        <div class="text-container" [ngsReveal]="{ reset: true}" > 
             <h2>Photos</h2>
         </div>
-        <div class="image-collection"> 
-            <div class="image-holder" *ngFor="let img of imageCollection;let i=index;" >
+        <div class="image-collection" [ngsReveal]="{ reset: true}" > 
+            <div class="image-holder"  *ngFor="let img of imageCollection;let i=index;" >
             <div class="imageObj" [style.background-image]="" style="background-size: cover;background-position: center;">
                 <img src="{{img}}" height=350 width=350 loading="lazy" > 
             </div>
             </div>
             <div class="empty-image"></div>
         </div>
-        <div class="fade-container"> 
+        <div class="fade-container" [ngsReveal]="{ reset: true}" > 
             <img width=25 height=25 src='../../../assets/instagram.png'> <span (click)="openInstaProfile()"> View more on Instagram </span>
         </div>
     </div>

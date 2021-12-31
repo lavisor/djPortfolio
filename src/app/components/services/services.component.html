@@ -1,19 +1,19 @@
 <div class="service-container"  id="services">
-    <div class="text-container"> 
+    <div class="text-container" [ngsReveal]="{ reset: true}" > 
         <h2>Services</h2>
     </div>
     <div class="service-list-container"> 
         <div class="service-list">
-            <div class="service-item" *ngFor="let event of events;let i=index;"  (mouseover)='changeActiveState(i)' [ngClass]="{'service-menu-button-active': event.isActive}">
+            <div class="service-item" [ngsReveal]="{ reset: true}" *ngFor="let event of events;let i=index;"  (mouseover)='changeActiveState(i)' [ngClass]="{'service-menu-button-active': event.isActive}">
                 {{event.eventName}}
             </div>
         </div>
 
-        <div class="service-menu-pictures"> 
-            <div class="service-menu-card" *ngFor="let event of events" [style.background-image]="event.coverPicture" style="background-size:cover;background-position:center;" [ngClass]="{'service-menu-card-active': event.isActive}">
+        <div class="service-menu-pictures" > 
+            <div [ngsReveal]="{ reset: true}" class="service-menu-card" *ngFor="let event of events" [style.background-image]="event.coverPicture" style="background-size:cover;background-position:center;" [ngClass]="{'service-menu-card-active': event.isActive}">
                 <span class="menu-event-name"> {{event.eventName}}</span>
-                <div class="menu-card-glint1"> </div>
-                <div class="menu-card-glint2"> </div>
+                <div class="menu-card-glint1" > </div>
+                <div class="menu-card-glint2" > </div>
             </div>
         </div>
     </div>

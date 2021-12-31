@@ -1,11 +1,11 @@
 <div class="whyhire-container" id="whyhire"> 
-    <div class="text-container"> 
+    <div class="text-container" [ngsReveal]="{ reset: true}"> 
         <h2>Why hire us?</h2>
     </div>
-    <nb-card size="medium">
-        <nb-card-body>
+    <nb-card size="medium" [ngsReveal]="{ reset: true}">
+        <nb-card-body >
           <nb-stepper orientation="horizontal">
-            <nb-step label="Music">
+            <nb-step label="Music" [ngsReveal]="{ reset: true}">
               <h4>Music Selection</h4>
               <p class="lorem">
                 Our professional DJ keeps a staggeringly large library of music that they can draw on to create different playlists. 
@@ -16,7 +16,7 @@
               <!-- <button nbButton disabled nbStepperNext>prev</button>
               <button nbButton nbStepperNext>next</button> -->
             </nb-step>
-            <nb-step label="Equipment">
+            <nb-step label="Equipment" [ngsReveal]="{ reset: true}">
               <h4>Equipment & Lighting</h4>
               <p class="lorem">
                 Our DJ comes with professional equipment. This means speakers capable of producing clear sound without distortion, 
@@ -29,7 +29,7 @@
               <!-- <button nbButton nbStepperPrevious>prev</button>
               <button nbButton nbStepperNext>next</button> -->
             </nb-step>
-            <nb-step label="Experience">
+            <nb-step label="Experience" [ngsReveal]="{ reset: true}">
               <h4>Memorable Experience</h4>
               <p class="lorem">
                 Our DJ can keep the momentum going throughout the entire event. They are able to switch from one song to another in a fluid way so that there are no gaps of dead air or awkward rhythm transitions. They also are able to read the crowd to know when it needs a slower pace or faster one. 
@@ -40,7 +40,7 @@
               <!-- <button nbButton nbStepperPrevious>prev</button>
               <button nbButton disabled nbStepperNext>next</button> -->
             </nb-step>
-            <nb-step label="Value">
+            <nb-step label="Value" [ngsReveal]="{ reset: true}">
                 <h4>Value for Money</h4>
                 <p class="lorem">
                     For guests, the most important aspects of a wedding include the ceremony, food, and reception. Although more expensive than hiring a friend or amateur, a our professional DJ can guarantee the reception will be a fun time. 

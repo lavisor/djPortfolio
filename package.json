@@ -27,8 +27,10 @@
     "@nebular/eva-icons": "9.0.0",
     "@nebular/theme": "^9.0.0",
     "@nguniversal/express-engine": "^13.0.1",
+    "@yoozly/ngx-parallax": "^0.3.0",
     "eva-icons": "^1.1.2",
     "express": "^4.15.2",
+    "ngx-scrollreveal": "^3.0.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

@@ -1,7 +1,19 @@
+
 .hello-container{
     height: 465px;
     overflow: hidden;
     background: #e5e5e5;
+
+    .background-container {
+        height: 625px;
+        transform: rotate3d(0, 1, 0, 180deg);
+        width: 400px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+
+    }
 }
 
 video{
@@ -19,10 +31,12 @@ video{
 }
 
 .profile-info{
-
+    position: relative;
+    z-index: 4;
+    
     .profile-texts{
         width: fit-content;
-        background: #d9d9d99c;
+        background: #d3d3d3e6;
         padding: 15px 25px;
         margin-bottom: 5px;
     }

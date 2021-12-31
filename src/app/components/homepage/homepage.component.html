@@ -1,16 +1,17 @@
-<div class="hello-container"> 
-    <div class="profile-container">
-        <div class="profile-info">
-           <div class="profile-texts"><h2>KEEP ON DANCING</h2></div> 
-           <div class="profile-texts"><h2> Let's Make it a Night to Remember </h2></div>
+<div class="welcome-section">
+    <div class="hello-container"> 
+        <div class="profile-container">
+            <div class="profile-info"  ngx-parallax>
+               <div class="profile-texts" [ngsReveal]="{ reset: true}"><h2>KEEP ON DANCING</h2></div> 
+               <div class="profile-texts" [ngsReveal]="{ reset: true}"><h2> Let's Make it a Night to Remember </h2></div>
+            </div>
         </div>
+        
+        <div class="background-container">
+            <img src="../../../assets/dj-homepage.png" height="100%" width="100%" alt="DJ at your service">
+        </div> 
     </div>
-    
-    <div class="background-container">
-    </div> 
-
 </div>
-
 <app-whyhire></app-whyhire>
 <app-services></app-services>
 <app-gallary></app-gallary>

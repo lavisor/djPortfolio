@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule, NbListModule , NbIconModule, NbButtonModule ,NbCardModule, NbUserModule, NbStepperModule} from '@nebular/theme';
+import { NgxParallaxModule } from '@yoozly/ngx-parallax';
+import { NgsRevealModule } from 'ngx-scrollreveal';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -46,7 +48,9 @@ import { PricecardComponent } from './components/pricing/pricecard/pricecard.com
     NbButtonModule,
     NbCardModule,
     NbUserModule,
-    NbStepperModule
+    NbStepperModule,
+    NgxParallaxModule,
+    NgsRevealModule
   ],
   providers: [],
   bootstrap: [AppComponent]

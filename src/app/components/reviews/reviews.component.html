@@ -1,10 +1,10 @@
-<div class="review-heading-container">
+<div class="review-heading-container" [ngsReveal]="{ reset: true}">
 <h2> What our customers say </h2>
 </div>
 
 <div class="scroll-parent-container">
 
-    <div class="review-card-container"> 
+    <div class="review-card-container" [ngsReveal]="{ reset: true}" > 
         <div class="scroll-container-reviews" #reviewContainer> 
             <div class="emptyspace-filler"> </div>
             <nb-card *ngFor="let review of reviews;let i=index;" [ngClass]="{'highlight': isActiveCard(i)}">
