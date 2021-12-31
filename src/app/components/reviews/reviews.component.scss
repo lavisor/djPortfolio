@@ -9,9 +9,12 @@ nb-card {
     height:contain;
     border-radius: 10px;
     margin:15px;
+    
+}
+
+.review-card{
     transition: 0.3s all ease-in-out;
     transform: scale(0.9)  rotate3d(0, 1, 0, 30deg);
-    
 }
 
 .highlight{

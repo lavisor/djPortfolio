@@ -7,7 +7,7 @@
     <div class="review-card-container" [ngsReveal]="{ reset: true}" > 
         <div class="scroll-container-reviews" #reviewContainer> 
             <div class="emptyspace-filler"> </div>
-            <nb-card *ngFor="let review of reviews;let i=index;" [ngClass]="{'highlight': isActiveCard(i)}">
+            <nb-card *ngFor="let review of reviews;let i=index;"  [ngClass]="{'highlight': isActiveCard(i) , 'review-card': true}">
                 <nb-card-body>
                    <i> "{{review.reivewText}}" </i>
                 </nb-card-body>

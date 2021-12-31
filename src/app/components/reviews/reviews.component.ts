@@ -13,34 +13,34 @@ export class ReviewsComponent implements OnInit {
   activeTab: number = 0; 
   reviews: any = [
     { 
-      name: "Kishore Logu 1" , 
+      name: "Yasmin Fathima" , 
       location: "Chennai" , 
-      reivewText: "A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases. Originally, nebula was a name for any diffuse astronomical object, including galaxies beyond the Milky Way.",
+      reivewText: "Was good working with him. Very professional and patient with his work also delivered entertainment as promised.",
       base64: ""
     },
-    { name: "Vinod stinson 2" , 
+    { name: "Abhishek Dhiman" , 
     location: "Chennai" , 
-    reivewText: "A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases. Originally, nebula was a name for any diffuse astronomical object, including galaxies beyond the Milky Way.",
+    reivewText: "Good one with lot of options and enjoyable delicacy. Will definatly refer to my friends too.",
     base64:""
     },
-    { name: "Kishore Logu 3" , 
+    { name: "Pencil" , 
     location: "Chennai" , 
-    reivewText: "A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases. Originally, nebula was a name for any diffuse astronomical object, including galaxies beyond the Milky Way.", 
+    reivewText: "Wow Sama dj experience.hire Panna reception Ku expect panatha Vida nalla panaga.nalla decent price.good team. Dj Stinsa rocks 💥", 
     base64: ""
     },
-    { name: "Vinod stinson 4" , 
+    { name: "TheKish Live" , 
     location: "Chennai" , 
-    reivewText: "A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases. Originally, nebula was a name for any diffuse astronomical object, including galaxies beyond the Milky Way.",
+    reivewText: "Best DJ for any events.",
     base64: ""
     },
-    { name: "Kishore Logu 5" , 
+    { name: "Gowtham Rajagopal" , 
     location: "Chennai" , 
-    reivewText: "A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases. Originally, nebula was a name for any diffuse astronomical object, including galaxies beyond the Milky Way.",
+    reivewText: "I booked him for my sister's wedding. He was very professional and very serious about his commitments.",
     base64: ""
     },
-    { name: "Kishore Logu 6" , 
+    { name: "Rahul Rahul" , 
     location: "Chennai" , 
-    reivewText: "A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases. Originally, nebula was a name for any diffuse astronomical object, including galaxies beyond the Milky Way.",
+    reivewText: "Had to choose between three package. I choose the standard package. Satisfied with his service.",
     base64: ""
   }
   ];

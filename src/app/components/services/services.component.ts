@@ -31,6 +31,6 @@ export class ServicesComponent implements OnInit {
   }
 
   navigateToContactsPage(){
-    this.router.navigate(['/']);
+    document.getElementById("contact")?.scrollIntoView({behavior: 'smooth'});
   }
 }
